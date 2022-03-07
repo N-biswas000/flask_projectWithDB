@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>display page</title>
+</head>
+<body>
+<table border="1">
+    <tr>
+        <th>Student Id</th>
+        <th>Student Name</th>
+        <th>Student Address</th>
+         <th>Book Id</th>
+    </tr>
+    {% for data in records %}
+    <tr>
+        <td>{{data[0]}}</td>
+        <td>{{data[1]}}</td>
+        <td>{{data[2]}}</td>
+        <td>{{data[3]}}</td>
+    </tr>
+    {% endfor %}
+
+</table>
+
+
+
+</body>
+</html>
